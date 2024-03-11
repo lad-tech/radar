@@ -2,7 +2,7 @@ name: Docs
 
 on:
   push:
-    branches: [ "docs", "main" ]
+    branches: [ "docs", "main", "master" ]
 
 jobs:
   docs:
@@ -17,15 +17,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
-      - restore_cache:
-          key: node-cache-{{ checksum "package-lock.json" }}
-      - run:
-          name: Install node packages
-          command: npm ci
-      - save_cache:
-          paths:
-            - ./node_modules
-          key: node-cache-{{ checksum "package-lock.json" }}
+      - name: restore_cache
+        key: node-cache-{{ checksum "package-lock.json" }}
+      - name: Install node packages
+        run: npm ci
+      - name: save_cache
+        paths:
+          - ./node_modules
+        key: node-cache-{{ checksum "package-lock.json" }}
       - name: Build website
         run: npm run build:prod
       # Popular action to deploy to GitHub Pages:
