@@ -7,24 +7,16 @@ on:
 jobs:
   docs:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [ 20.11.x ]
     steps:
       - name: Check out Git repository # clone the repo to local ci workspace
         uses: actions/checkout@v3.5.3
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node }}
-      - name: restore_cache
-        key: node-cache-{{ checksum "package-lock.json" }}
+          node-version: 20
+          cache: 'npm'
       - name: Install node packages
         run: npm ci
-      - name: save_cache
-        paths:
-          - ./node_modules
-        key: node-cache-{{ checksum "package-lock.json" }}
       - name: Build website
         run: npm run build:prod
       # Popular action to deploy to GitHub Pages:
