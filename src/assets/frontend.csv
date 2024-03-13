@@ -1,0 +1,81 @@
+name,quadrant,ring,isNew,description
+HTML,Languages & Frameworks,Adopt,FALSE,
+CSS,Languages & Frameworks,Adopt,FALSE,
+TypeScript,Languages & Frameworks,Adopt,FALSE,
+React,Languages & Frameworks,Adopt,FALSE,
+Sass (SCSS),Languages & Frameworks,Adopt,FALSE,
+axios,Languages & Frameworks,Adopt,FALSE,
+react-router-dom,Languages & Frameworks,Adopt,FALSE,
+ApexCharts,Languages & Frameworks,Adopt,FALSE,"<a href=""https://apexcharts.com/docs/installation/"" target=""_blank"">Доументация</a>"
+Antd (Ant Design),Languages & Frameworks,Adopt,FALSE,
+Socket.IO,Languages & Frameworks,Adopt,FALSE,
+Lodash,Languages & Frameworks,Adopt,FALSE,
+Day.js,Languages & Frameworks,Adopt,FALSE,Работа с временем и датами
+RTK Query,Languages & Frameworks,Adopt,FALSE,
+Redux Toolkit,Languages & Frameworks,Adopt,FALSE,На новых проектах отдаем предпочтение RTK Query
+Next.js,Languages & Frameworks,Adopt,FALSE,
+DHTMLX,Languages & Frameworks,Trial,FALSE,"<a href=""https://docs.dhtmlx.com/"" target=""_blank"">Доументация</a>"
+Janus WebRTC Server,Languages & Frameworks,Trial,FALSE,
+openCV,Languages & Frameworks,Trial,FALSE,Компьютерное зрение и работа с ним
+date-fns,Languages & Frameworks,Hold,FALSE,Используем day.js
+Material-UI,Languages & Frameworks,Hold,FALSE,Используем antd
+Less,Languages & Frameworks,Hold,FALSE,Используем SCSS
+React Hook Form,Languages & Frameworks,Hold,FALSE,Используем формы и валидацию форм от antd
+Styled Components,Languages & Frameworks,Hold,FALSE,Используем scss modules
+Ramda,Languages & Frameworks,Hold,FALSE,Используем lodash
+Redux,Languages & Frameworks,Hold,FALSE,Есть альтернатива лучше - Redux Toolkit / RTK Query
+Reselect,Languages & Frameworks,Hold,FALSE,Встроен в RTK
+Immer,Languages & Frameworks,Hold,FALSE,Встроен в RTK
+MobX,Languages & Frameworks,Hold,FALSE,Отдаем предпочтение Redux Toolkit / RTK Query
+Redux Thunk,Languages & Frameworks,Hold,FALSE,Отдаем предпочтение Redux Toolkit / RTK Query
+Redux Saga,Languages & Frameworks,Hold,FALSE,Отдаем предпочтение Redux Toolkit / RTK Query
+typesafe-actions,Languages & Frameworks,Hold,FALSE,"Обычно используется в связке с thunk/saga, но мы отдаем предпочтение Redux Toolkit / RTK Query, в нем это не нужно"
+JavaScript,Languages & Frameworks,Hold,FALSE,Пишем только на TypeScript
+Moment.js,Languages & Frameworks,Hold,FALSE,"Есть альтернатива лучше: Day.js или date-fns, библиотека вышла из поддержки."
+Immutable.js,Languages & Frameworks,Hold,FALSE,Есть альтернатива лучше: Immer
+Gatsby,Languages & Frameworks,Hold,FALSE,Есть альтернатива лучше: Next.js
+Docker,Platforms,Adopt,FALSE,
+Node.js,Platforms,Adopt,FALSE,
+GitLab,Platforms,Adopt,FALSE,
+nginx,Platforms,Adopt,FALSE,
+Git,Tools,Adopt,FALSE,
+NPM,Tools,Adopt,FALSE,
+Prettier,Tools,Adopt,FALSE,
+Figma,Tools,Adopt,FALSE,
+EditorConfig,Tools,Adopt,FALSE,
+ESLint,Tools,Adopt,FALSE,
+Babel,Tools,Adopt,FALSE,
+husky,Tools,Adopt,FALSE,
+lint-staged,Tools,Adopt,FALSE,
+Browserslist,Tools,Adopt,FALSE,
+stylelint,Tools,Adopt,FALSE,
+Storybook,Tools,Adopt,FALSE,
+Webpack,Tools,Adopt,FALSE,
+Webpack Module Federation,Tools,Adopt,FALSE,Построение микрофронтов при использовании сборщика Webpack
+Commitizen,Tools,Adopt,FALSE,
+Semantic Release,Tools,Adopt,FALSE,
+Vite,Tools,Trial,FALSE,Современный и быстрый сборщик
+vite-plugin-federation,Tools,Trial,FALSE,Построение микрофронтов при использовании сборщика Vite
+Create React App,Tools,Hold,FALSE,В новых проектах используем Vite
+react-app-rewired,Tools,Hold,FALSE,"Переопределение webpack-конфига приложения. Не требуется, так как в новых проектах используем Vite."
+craco,Tools,Hold,FALSE,"Переопределение webpack-конфига приложения. Не требуется, так как в новых проектах используем Vite."
+customize-cra,Tools,Hold,FALSE,"Переопределение webpack-конфига приложения. Не требуется, так как в новых проектах используем Vite."
+Yarn,Tools,Hold,FALSE,Используем NPM
+GitFlow,Techniques,Adopt,FALSE,
+Functional Programming,Techniques,Adopt,FALSE,
+Feature-Slice Design,Techniques,Adopt,FALSE,"Архитектурная методология. <a href=""https://feature-sliced.design/ru/"" target=""_blank"">Доументация</a>"
+React Hooks,Techniques,Adopt,FALSE,
+REST API,Techniques,Adopt,FALSE,
+WebSocket,Techniques,Adopt,FALSE,
+Server-Side Rendering (SSR),Techniques,Adopt,FALSE,
+Монорепозитории,Techniques,Adopt,FALSE,
+Микрофронтенды,Techniques,Adopt,FALSE,"На данный момент реализуем с помощью Webpack Module Federation, vite-plugin-federation и самописных решений"
+Semantic Versioning,Techniques,Adopt,FALSE,
+Conventional Commits,Techniques,Adopt,FALSE,
+i18n,Techniques,Adopt,FALSE,
+WebRTC,Techniques,Trial,FALSE,
+GraphQL,Techniques,Hold,FALSE,Используем REST API
+CSS-in-JS,Techniques,Hold,FALSE,Отдаем предпочтение SCSS-modules
+Object-Oriented Programming,Techniques,Hold,FALSE,
+Backend for Frontend (BFF),Techniques,Hold,FALSE,
+React Classes Component,Techniques,Hold,FALSE,Применяем подход функциональных компонентов и используем React Hooks
