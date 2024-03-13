@@ -45,7 +45,7 @@ module.exports = {
     path: buildPath,
     publicPath: ASSET_PATH,
     filename: '[name].[contenthash].js',
-    assetModuleFilename: 'images/[name][ext]',
+    assetModuleFilename: 'assets/[name][ext]',
   },
   resolve: {
     extensions: ['.js', '.ts'],
@@ -73,7 +73,7 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
+        test: /\.(png|jpg|jpeg|gif|ico|svg|csv)$/,
         exclude: /node_modules/,
         type: 'asset/resource',
       },
