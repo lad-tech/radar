@@ -15,5 +15,4 @@ require('./assets/fourth-quadrant-btn-bg.svg')
 require('./assets/arrow-white-icon.svg')
 require('./assets/search-active-wave.svg')
 require('./assets/pdf_banner.png')
-require('./assets/frontend.csv')
-require('./assets/mobile.csv')
+
