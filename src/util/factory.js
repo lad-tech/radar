@@ -316,38 +316,13 @@ const Factory = function () {
       }
     })
 
-    const domainName = DomainName(window.location.search.substring(1))
 
-    const paramId = getDocumentOrSheetId()
-    if (paramId && paramId.endsWith('.csv')) {
-      sheet = CSVDocument(paramId)
-      sheet.init().build()
-    } else if (paramId && paramId.endsWith('.json')) {
-      sheet = JSONFile(paramId)
-      sheet.init().build()
-    } else if (domainName && domainName.endsWith('google.com') && paramId) {
-      const sheetName = getSheetName()
-      sheet = GoogleSheet(paramId, sheetName)
-      sheet.init().build()
-    } else {
-      if (!featureToggles.UIRefresh2022) {
-        document.body.style.opacity = '1'
-        document.body.innerHTML = ''
-        const content = d3.select('body').append('div').attr('class', 'input-sheet')
-        plotLogo(content)
-        const bannerText =
-          '<div><h1>Build your own radar</h1><p>Once you\'ve <a href ="https://www.thoughtworks.com/radar/byor">created your Radar</a>, you can use this service' +
-          ' to generate an <br />interactive version of your Technology Radar. Not sure how? <a href ="https://www.thoughtworks.com/radar/byor">Read this first.</a></p></div>'
+    const paramId = 'https://docs.google.com/spreadsheets/d/1ne4Ig9KZ4_vJjhwGJFfkjXf9Y_wQigmMrd2YeZLX86M/edit?usp=sharing'
 
-        plotBanner(content, bannerText)
+    const sheetName = getSheetName()
+    sheet = GoogleSheet(paramId, sheetName)
+    sheet.init().build()
 
-        plotForm(content)
-
-        plotFooter(content)
-      }
-
-      setDocumentTitle()
-    }
   }
 
   return self
