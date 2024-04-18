@@ -26,7 +26,7 @@ Object.entries(featureToggles).forEach(function ([key, value]) {
 
 module.exports = merge(common, {
   mode: 'development',
-  entry: { main: main },
+  entry: { main },
   performance: {
     hints: false,
   },
